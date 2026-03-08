@@ -1,3 +1,4 @@
+This repository accompanies the doctoral dissertation introducing the MYCER (Mustafa Yüksel Çınar Energy Resilience) composite index framework.
 # MYCER Replication Package
 
 This repository contains the replication package for the MYCER
