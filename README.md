@@ -33,3 +33,10 @@ Python libraries used:
 - xgboost
 - shap
 - matplotlib
+## Replication Package
+
+This repository provides the computational replication package for the MYCER framework presented in the doctoral dissertation.
+
+All scripts necessary to reproduce the MYCER index calculation, including data preprocessing, weighting procedures, structural vulnerability computation, and final aggregation, are documented within this repository.
+
+The repository is intended to support transparency, reproducibility, and open scientific practice.
