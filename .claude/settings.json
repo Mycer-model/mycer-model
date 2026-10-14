@@ -1,0 +1,14 @@
+{
+  "enabledPlugins": {
+    "claude-mem@thedotmack": true,
+    "claude-code-setup@anthropic-plugin-directory": true
+  },
+  "extraKnownMarketplaces": {
+    "thedotmack": {
+      "source": {
+        "source": "github",
+        "repo": "thedotmack/claude-mem"
+      }
+    }
+  }
+}
