@@ -1,0 +1,45 @@
+feature,area,priority,original,clone,notes
+Sign up and login (email/social),account,must,yes,no,
+Documents list and create,documents,must,yes,no,
+Rich-text editor (tables code blocks images),editor,must,yes,no,
+Autosave,editor,must,yes,no,
+AI autocomplete grounded in library with source trace,ai,must,yes,no,hard part; needs retrieval
+AI chat with @PDF mentions and cited answers,ai,must,yes,no,
+AI edit of selected text,ai,should,yes,no,
+Saved prompts and / prompt menu,ai,could,yes,no,
+Section prompts / outline builder (generate headings),ai,should,yes,no,
+Code execution and charts in chat,ai,could,yes,no,added Sep-Oct 2026
+Reviews (claim check proofreading),ai,should,yes,no,
+Prompt guidance (learns your style),ai,could,yes,no,
+Inline citations (parenthetical narrative grouped page numbers),citations,must,yes,no,
+Auto bibliography,citations,must,yes,no,
+10000+ CSL citation styles + locale,citations,should,yes,no,5 default styles first
+Smart paste DOI (citation/link/text),citations,could,yes,no,
+Figure and table cross-references,editor,could,yes,no,
+Math equations,editor,should,yes,no,
+Upload PDF to library with metadata extraction,library,must,yes,no,
+OCR for scanned PDFs,library,should,yes,no,
+Import from Zotero/Mendeley/BibTeX/RIS/DOI,library,should,yes,no,one-way
+Collections (nested folders),library,should,yes,no,
+Library filters and duplicate detection,library,could,yes,no,
+Library export (.bib .ris .csv),library,should,yes,no,
+PDF reader with search and jump-to-passage,library,must,yes,no,
+Find papers search with filters,research,must,yes,no,use open APIs
+Open access full-text papers,research,could,yes,no,
+Browser clipper (Chrome Edge Firefox),research,could,yes,no,
+Share by link and invite,collab,should,yes,no,
+Roles editor/commenter/viewer,collab,should,yes,no,
+Realtime co-editing,collab,could,yes,no,
+Comments,collab,should,yes,no,
+Version history,collab,should,yes,no,
+Read-only publishing,collab,could,yes,no,
+Document cloning,collab,could,yes,no,
+Export docx with native Word citations,export,must,yes,no,
+Export LaTeX zip and HTML,export,should,yes,no,
+Layout presets (double-spaced two-column thesis),export,could,yes,no,
+Plans with usage limits (free/plus/pro),billing,must,yes,no,Stripe
+Settings language privacy,account,should,yes,no,
+Mobile app,platform,could,partial,no,help page exists; skip v1
+Jenni 200M paper index,data,skip,yes,no,owned data; use open APIs
+Jenni trained models and prompts,data,skip,yes,no,owned IP
+Teams and institutions plans,business,skip,yes,no,out of scope
