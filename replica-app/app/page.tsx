@@ -13,7 +13,7 @@ export default async function Home() {
       </header>
       {items.length === 0
         ? <EmptyState title="Nothing here yet" body="Describe a scene and pick a model. Your results will show up on this page." href="/generate" action="Start creating" />
-        : <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{items.map((g) => <li key={g.id}><GenerationCard g={g} /></li>)}</ul>}
+        : <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{items.map((g) => <li key={g.id} className="min-w-0"><GenerationCard g={g} /></li>)}</ul>}
     </div>
   );
 }

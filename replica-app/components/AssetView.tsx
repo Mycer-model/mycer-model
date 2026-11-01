@@ -17,7 +17,7 @@ export function AssetView({ initial }: { initial: Generation }) {
         {g.status === 'failed' && <p role="alert" className="p-8">That did not work: {g.failure} Your credits were returned.</p>}
         {g.status === 'cancelled' && <p role="status" className="p-8">Stopped. Your credits were returned.</p>}
       </div>
-      <p className="break-words text-sm">{g.prompt}</p>
+      <p className="text-sm [overflow-wrap:anywhere]">{g.prompt}</p>
       <p className="text-xs text-muted">{g.kind} · {g.ratio}{g.duration ? ` · ${g.duration}s` : ''} · {g.cost} credits</p>
       <div className="flex gap-3">
         {g.status === 'running' && <button onClick={cancel} className="rounded-md border border-input px-4 py-2 text-sm font-medium hover:bg-surface">Stop</button>}

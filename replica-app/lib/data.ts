@@ -20,7 +20,8 @@ export async function getGeneration(id: string) {
   return gen ?? null;
 }
 async function sync(gen: Generation) {
-  const s = await provider.poll(gen.taskId);
+  // A provider error must fail this one generation, never break every page that lists them.
+  const s = await provider.poll(gen.taskId).catch(() => ({ status: 'failed' as const, failure: 'The provider could not finish this one.' }));
   if (s.status === 'succeeded') { gen.status = 'succeeded'; gen.outputUrl = s.outputUrl; }
   if (s.status === 'failed') { gen.status = 'failed'; gen.failure = s.failure; store.ledger = refund(store.ledger, gen.id); }
 }

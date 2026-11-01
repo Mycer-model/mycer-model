@@ -10,7 +10,7 @@ export function GenerationCard({ g }: { g: Generation }) {
           : <span className="text-sm" role="status">{LABEL[g.status]}</span>}
       </div>
       <div className="p-3">
-        <p className="line-clamp-2 break-words text-sm">{g.prompt}</p>
+        <p className="line-clamp-2 [overflow-wrap:anywhere] text-sm">{g.prompt}</p>
         <p className="mt-1 text-xs text-muted">{LABEL[g.status]} · {g.cost} credits</p>
       </div>
     </Link>

@@ -47,7 +47,7 @@ export function GenerateForm({ credits }: { credits: number }) {
       {error && <p role="alert" className="rounded-md border border-danger p-3 text-sm text-danger">{error}</p>}
       <div className="flex items-center justify-between gap-3">
         <p className={`text-sm ${cost > credits ? 'text-danger' : 'text-muted'}`}>This will use {cost} of your {credits} credits.</p>
-        <button type="submit" disabled={busy || !prompt.trim() || cost > credits} className="rounded-md bg-accent px-5 py-2 text-sm font-semibold text-on-accent hover:bg-accent-hover disabled:bg-disabled-bg disabled:text-disabled-text">{busy ? 'Starting…' : 'Create'}</button>
+        <button type="submit" disabled={busy || !prompt.trim() || prompt.length > model.maxPrompt || cost > credits} className="rounded-md bg-accent px-5 py-2 text-sm font-semibold text-on-accent hover:bg-accent-hover disabled:bg-disabled-bg disabled:text-disabled-text">{busy ? 'Starting…' : 'Create'}</button>
       </div>
     </form>
   );
