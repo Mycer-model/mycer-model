@@ -1,0 +1,53 @@
+feature,area,priority,original,clone,notes
+Sign up and login with email or social,account,must,yes,no,
+Generate video from text,generate,must,yes,no,third-party model API in the clone
+Generate video from image,generate,must,yes,no,
+Generate image from text,generate,must,yes,no,
+Model selector with credit cost per generation,generate,must,yes,no,
+Ratio and duration options per model,generate,must,yes,no,request schema differs per model
+Async task queue with status (pending running succeeded failed),generate,must,yes,no,poll or push
+Content moderation on prompts and outputs,safety,must,yes,no,failed moderated tasks still cost credits in the original
+Asset library with projects,projects,must,yes,no,
+Asset page with preview and download,projects,must,yes,no,
+Credits and plans (free standard pro max),billing,must,yes,no,
+Credit top-up purchase,billing,must,yes,no,min 1000 credits in the original
+Plan upgrade with proration,billing,must,yes,no,
+Temporary output URLs with download,assets,should,yes,no,
+Reference images video and audio inputs,generate,should,yes,no,
+Draft mode then enhance (480p preview to 1080p),generate,should,yes,no,enhance within 7 days
+Video to video and extend and edit modes,generate,should,yes,no,
+Image generation with reference images,generate,should,yes,no,
+Text to speech and voice cloning,audio,should,yes,no,
+Music and sound effect generation,audio,should,yes,no,
+Video upscaling to 4K,enhance,should,yes,no,
+Frame rate conversion,enhance,could,yes,no,Max plan and above
+Background removal,enhance,could,yes,no,
+HDR conversion (Ruby),enhance,could,yes,no,Max plan; model is Runway's own
+Agent chat that plans and runs generations,agent,should,yes,no,LLM agent over your own tools
+Brand Kits,brand,should,yes,no,
+Workflows node graph editor,workflows,should,yes,no,biggest build cost
+Publish Workflows as versioned API endpoints,workflows,could,yes,no,
+Compositing nodes,workflows,could,yes,no,
+Team plan shared credit pool and seats,team,should,yes,no,
+Comments on assets,team,should,yes,no,
+Roles and permissions,team,should,yes,no,
+Project credit caps,team,could,yes,no,enterprise
+SSO and default SSO,enterprise,could,yes,no,enterprise
+Audit logs and usage export,enterprise,could,yes,no,enterprise
+Public REST API with API keys,api,should,yes,no,
+Official SDKs (node python),api,could,yes,no,
+Usage tiers and rate limits,api,should,yes,no,
+Model router (cost latency quality),api,could,yes,no,
+Recipes (product ad swap UGC multi-shot),api,could,yes,no,
+Realtime conversational Characters,characters,could,yes,no,
+Avatar knowledge base and tool calling,characters,could,yes,no,
+App Studio (build apps from a prompt),ai apps,could,yes,no,
+Runway Ads (read performance and publish variants),ads,could,yes,no,needs ad platform APIs
+MCP server for agents,integrations,could,yes,no,
+Adobe and DaVinci Resolve plugins,integrations,could,yes,no,
+iOS and Android apps,mobile,could,yes,no,
+Generative models Gen-4.5 Aleph Ruby Act-Two,models,could,yes,skip,Runway's own models cannot be cloned
+Third-party model resale (Kling Seedance Nano Banana),models,could,yes,skip,licences; call providers directly
+User base and Creative Partners Program,network,could,yes,skip,not part of the product you can rebuild
+Robotics and Research products,research,could,yes,skip,out of scope
+Enterprise data-security attestations,enterprise,could,yes,skip,a contract and audit not code
