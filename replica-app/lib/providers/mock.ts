@@ -1,6 +1,8 @@
 import type { Provider, ProviderRequest, ProviderStatus } from './types';
 // Fake provider: finishes after 4 seconds and returns a generated SVG poster. No network.
-const tasks = new Map<string, { req: ProviderRequest; startedAt: number }>();
+// Kept on globalThis: route handlers and pages can load separate copies of this module.
+const g = globalThis as unknown as { __mockTasks?: Map<string, { req: ProviderRequest; startedAt: number }> };
+const tasks = (g.__mockTasks ??= new Map<string, { req: ProviderRequest; startedAt: number }>());
 const RUN_MS = 4000;
 const hue = (s: string) => [...s].reduce((a, c) => (a * 31 + c.charCodeAt(0)) % 360, 7);
 function poster(req: ProviderRequest): string {

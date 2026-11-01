@@ -6,12 +6,12 @@ Generate image from text,generate,must,yes,partial,mock provider only
 Model selector with credit cost per generation,generate,must,yes,yes,shows cost per model and total before creating
 Ratio and duration options per model,generate,must,yes,yes,validated per model in lib/models.ts
 Async task queue with status (pending running succeeded failed),generate,must,yes,partial,"in memory, polled every second; no durable queue yet"
-Content moderation on prompts and outputs,safety,must,yes,no,failed moderated tasks still cost credits in the original
+Content moderation on prompts and outputs,safety,must,yes,partial,input validation and rate limit only; no moderation yet
 Asset library with projects,projects,must,yes,no,
 Asset page with preview and download,projects,must,yes,partial,"preview, stop, download; no comments yet"
-Credits and plans (free standard pro max),billing,must,yes,partial,append-only ledger with reserve and refund and tests; no plans or Stripe yet
-Credit top-up purchase,billing,must,yes,no,min 1000 credits in the original
-Plan upgrade with proration,billing,must,yes,no,
+Credits and plans (free standard pro max),billing,must,yes,partial,"ledger, webhook handlers (tested) and migration done; Stripe products and live wiring need your keys"
+Credit top-up purchase,billing,must,yes,partial,top-up webhook handler done; Checkout route needs your Stripe keys
+Plan upgrade with proration,billing,must,yes,partial,subscription webhook handlers done; Checkout and Customer Portal routes need your Stripe keys
 Temporary output URLs with download,assets,should,yes,no,
 Reference images video and audio inputs,generate,should,yes,no,
 Draft mode then enhance (480p preview to 1080p),generate,should,yes,no,enhance within 7 days
