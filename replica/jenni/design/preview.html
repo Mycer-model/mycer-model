@@ -1,0 +1,33 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Design check</title><link rel="stylesheet" href="tokens.css">
+<style>
+*{box-sizing:border-box}body{margin:0;font:16px/24px var(--font-sans);background:var(--color-canvas);color:var(--color-text)}
+.app{display:grid;grid-template-columns:240px 1fr 380px;min-height:100vh}
+aside{background:var(--color-surface);border-right:1px solid var(--color-border);padding:16px}
+.right{background:var(--color-surface);border-left:1px solid var(--color-border);padding:16px;display:flex;flex-direction:column;gap:12px}
+main{padding:32px;display:flex;justify-content:center}
+.page{background:var(--color-bg);width:760px;max-width:100%;padding:56px 64px;box-shadow:var(--shadow-card);border-radius:6px;font-family:var(--font-serif);font-size:17px;line-height:30px}
+h1{font:700 32px/40px var(--font-serif);margin:0 0 16px}h2{font:650 24px/32px var(--font-serif);margin:24px 0 8px}
+.btn{font:600 14px/20px var(--font-sans);border:0;border-radius:10px;height:40px;padding:0 16px;cursor:pointer}
+.btn:focus-visible,input:focus-visible{outline:2px solid var(--color-focus-ring);outline-offset:2px}
+.primary{background:var(--color-accent);color:var(--color-on-accent)}.secondary{background:var(--color-bg);color:var(--color-text);border:1px solid var(--color-border-input)}
+.danger{background:var(--color-danger);color:var(--color-bg)}.ghost{background:none;color:var(--color-text)}
+.chip{background:var(--color-citation-bg);color:var(--color-citation-text);border-radius:6px;padding:0 6px;font:500 14px var(--font-sans)}
+.ghosttext{color:var(--color-ghost-text)}.kbd{font:500 12px var(--font-sans);border:1px solid var(--color-border);border-radius:6px;padding:2px 6px;background:var(--color-surface)}
+.msg{border-radius:10px;padding:10px 12px;font-size:14px;line-height:20px}.user{background:var(--color-accent-soft);color:var(--color-on-accent-soft)}.ai{background:var(--color-surface-raised);border:1px solid var(--color-border)}
+input{height:40px;border:1px solid var(--color-border-input);border-radius:10px;padding:0 12px;background:var(--color-bg);color:var(--color-text);font:inherit;width:100%}
+.add{background:var(--color-diff-add-bg);color:var(--color-diff-add-text)}.rem{background:var(--color-diff-remove-bg);color:var(--color-diff-remove-text);text-decoration:line-through}
+.hl{background:var(--color-highlight-1);color:var(--color-on-highlight)}.cm{background:var(--color-comment-bg);color:var(--color-on-comment);padding:2px 6px;border-radius:6px;font:14px var(--font-sans)}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0;font-family:var(--font-sans)}
+@media(max-width:900px){.app{grid-template-columns:1fr}aside,.right{display:none}main{padding:16px}.page{padding:24px}}
+</style></head><body><div class="app">
+<aside><strong>Library</strong><p style="font-size:14px;color:var(--color-text-muted)">Collections</p><div class="row"><button class="btn secondary">New</button></div></aside>
+<main><article class="page"><h1>Grid resilience in coastal regions</h1>
+<p>Energy systems recover faster when storage is distributed <span class="chip">(Okafor, 2021)</span> <span class="ghosttext">and when demand response is coordinated across neighbouring districts.</span> <span class="kbd">Tab</span></p>
+<h2>Methods</h2>
+<p>We <span class="rem">utilised</span> <span class="add">used</span> a <span class="hl">stratified sample</span> of 40 sites. <span class="cm">Check sample size</span></p>
+<div class="row"><button class="btn primary">Export</button><button class="btn secondary">Share</button><button class="btn ghost">Cancel</button><button class="btn danger">Delete</button></div>
+</article></main>
+<div class="right"><strong>AI chat</strong><div class="msg user">What do the papers say about storage?</div>
+<div class="msg ai">Distributed storage shortened recovery time in most cases <span class="chip">(Okafor, 2021)</span>.</div><input placeholder="Ask AI, @ for sources" aria-label="Ask AI"></div>
+</div></body></html>
