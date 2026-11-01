@@ -10,6 +10,9 @@ module.exports = {
       accent: c('accent'), 'on-accent': c('on-accent'),
       danger: c('danger'), success: c('success'), warning: c('warning'),
       media: c('media-bg'), 'on-media': c('on-media'),
+      'accent-hover': c('accent-hover'), 'accent-active': c('accent-active'),
+      'danger-hover': c('danger-hover'), info: c('info'), ring: c('focus-ring'),
+      'disabled-bg': c('disabled-bg'), 'disabled-text': c('disabled-text'), overlay: c('overlay'),
     },
     fontFamily: { sans: 'var(--font-sans)', mono: 'var(--font-mono)' },
     fontSize: {
@@ -18,6 +21,6 @@ module.exports = {
     },
     borderRadius: { sm: '6px', md: '10px', lg: '16px', pill: '999px' },
     boxShadow: { card: 'var(--shadow-card)', pop: 'var(--shadow-pop)' },
-    extend: { spacing: { sidebar: '240px', header: '56px' }, maxWidth: { content: '1280px' } },
+    extend: { zIndex: { sticky: 10, dropdown: 20, overlay: 30, modal: 40, toast: 50 }, spacing: { sidebar: '240px', header: '56px' }, maxWidth: { content: '1280px' } },
   },
 };

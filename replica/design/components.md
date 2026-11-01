@@ -1,6 +1,7 @@
 # Component specs
 
-Tokens: `tokens.json`. Not measured from the original (no screenshots); values are neutral placeholders that
+Tokens: `tokens.json` (light) and `tokens.dark.json` (dark). The theme follows the system and can be forced with `data-theme`. Motion respects `prefers-reduced-motion`.
+Tokens: Not measured from the original (no screenshots); values are neutral placeholders that
 `replica-brand` replaces. Icons: Lucide (MIT). Base: shadcn/ui on Radix. Every interactive part has a visible
 focus (2px ring, `accent`, 2px offset) and works by keyboard.
 
@@ -9,7 +10,7 @@ Button
   variants  primary, secondary, ghost, danger
   sizes     sm 32px, md 40px, lg 48px
   states    default, hover, active, focus-visible, disabled, loading
-  tokens    primary: bg accent, text on-accent; radius md; font sm/600
+  tokens    primary: bg accent (hover accent-hover, active accent-active), text on-accent; danger: bg danger (hover danger-hover); disabled: disabled-bg + disabled-text; radius md; font sm/600
   a11y      real <button>; loading keeps the label for screen readers (aria-busy)
   used on   all
 
