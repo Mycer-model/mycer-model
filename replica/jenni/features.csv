@@ -1,9 +1,9 @@
 feature,area,priority,original,clone,notes
-Sign up and login (email/social),account,must,yes,no,
-Documents list and create,documents,must,yes,no,
-Rich-text editor (tables code blocks images),editor,must,yes,no,
-Autosave,editor,must,yes,no,
-AI autocomplete grounded in library with source trace,ai,must,yes,no,hard part; needs retrieval
+Sign up and login (email/social),account,must,yes,partial,"prototype sign-in stub, any email; real auth in /replica-backend"
+Documents list and create,documents,must,yes,yes,archive with 8 s undo; local storage
+Rich-text editor (tables code blocks images),editor,must,yes,partial,"headings, lists, bold/italic, quotes; no tables, code blocks, images yet"
+Autosave,editor,must,yes,yes,debounced local save; server sync later
+AI autocomplete grounded in library with source trace,ai,must,yes,partial,"hard part; needs retrieval; extractive stand-in for the model: picks a sentence from the user's own sources, keeps the passage id; Tab accept, Esc dismiss, Ctrl/Cmd+/ force; no LLM or refine yet"
 AI chat with @PDF mentions and cited answers,ai,must,yes,no,
 AI edit of selected text,ai,should,yes,no,
 Saved prompts and / prompt menu,ai,could,yes,no,
@@ -11,13 +11,13 @@ Section prompts / outline builder (generate headings),ai,should,yes,no,
 Code execution and charts in chat,ai,could,yes,no,added Sep-Oct 2026
 Reviews (claim check proofreading),ai,should,yes,no,
 Prompt guidance (learns your style),ai,could,yes,no,
-Inline citations (parenthetical narrative grouped page numbers),citations,must,yes,no,
-Auto bibliography,citations,must,yes,no,
+Inline citations (parenthetical narrative grouped page numbers),citations,must,yes,partial,parenthetical only; @ picker and Cite button; hover shows source passage
+Auto bibliography,citations,must,yes,partial,"APA and IEEE only, simple formatter"
 10000+ CSL citation styles + locale,citations,should,yes,no,5 default styles first
 Smart paste DOI (citation/link/text),citations,could,yes,no,
 Figure and table cross-references,editor,could,yes,no,
 Math equations,editor,should,yes,no,
-Upload PDF to library with metadata extraction,library,must,yes,no,
+Upload PDF to library with metadata extraction,library,must,yes,partial,"text read in the browser (pdfjs), size/page/upload limits per plan, manual metadata; no OCR, nothing stored server side"
 OCR for scanned PDFs,library,should,yes,no,
 Import from Zotero/Mendeley/BibTeX/RIS/DOI,library,should,yes,no,one-way
 Collections (nested folders),library,should,yes,no,
@@ -34,11 +34,11 @@ Comments,collab,should,yes,no,
 Version history,collab,should,yes,no,
 Read-only publishing,collab,could,yes,no,
 Document cloning,collab,could,yes,no,
-Export docx with native Word citations,export,must,yes,no,
+Export docx with native Word citations,export,must,yes,partial,docx with plain-text citations; reference list on paid plans only; native Word fields later
 Export LaTeX zip and HTML,export,should,yes,no,
 Layout presets (double-spaced two-column thesis),export,could,yes,no,
-Plans with usage limits (free/plus/pro),billing,must,yes,no,Stripe
-Settings language privacy,account,should,yes,no,
+Plans with usage limits (free/plus/pro),billing,must,yes,partial,Stripe; autocomplete metering and plan switch only; no Stripe
+Settings language privacy,account,should,yes,partial,suggestion switch and usage only
 Mobile app,platform,could,partial,no,help page exists; skip v1
 Jenni 200M paper index,data,skip,yes,no,owned data; use open APIs
 Jenni trained models and prompts,data,skip,yes,no,owned IP

@@ -1,0 +1,23 @@
+@import './../styles/tokens.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { background: var(--color-canvas); color: var(--color-text); font-family: var(--font-sans); }
+:focus-visible { outline: 2px solid var(--color-focus-ring); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+.doc .ProseMirror { outline: none; font-family: var(--font-serif); font-size: 17px; line-height: 30px; min-height: 420px; }
+.doc .ProseMirror h1 { font: 700 32px/40px var(--font-serif); margin: 0 0 16px; }
+.doc .ProseMirror h2 { font: 650 24px/32px var(--font-serif); margin: 24px 0 8px; }
+.doc .ProseMirror h3 { font: 650 19px/28px var(--font-serif); margin: 16px 0 4px; }
+.doc .ProseMirror h4 { font: 650 17px/26px var(--font-serif); margin: 12px 0 4px; }
+.doc .ProseMirror p { margin: 0 0 12px; }
+.doc .ProseMirror ul { list-style: disc; padding-left: 24px; margin: 0 0 12px; }
+.doc .ProseMirror ol { list-style: decimal; padding-left: 24px; margin: 0 0 12px; }
+.doc .ProseMirror blockquote { border-left: 3px solid var(--color-border); padding-left: 16px; color: var(--color-text-muted); }
+.doc .ProseMirror p.is-editor-empty:first-child::before { content: attr(data-placeholder); color: var(--color-text-muted); float: left; height: 0; pointer-events: none; }
+.ghost-text { color: var(--color-ghost-text); }
+.citation-chip { background: var(--color-citation-bg); color: var(--color-citation-text); border-radius: 6px; padding: 0 6px; margin: 0 2px; font: 500 14px/24px var(--font-sans); cursor: pointer; }
+.citation-chip[data-broken='true'] { text-decoration: underline wavy var(--color-danger); }
+.citation-chip.ProseMirror-selectednode { outline: 2px solid var(--color-focus-ring); }
