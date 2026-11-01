@@ -1,15 +1,15 @@
 feature,area,priority,original,clone,notes
 Sign up and login with email or social,account,must,yes,no,
-Generate video from text,generate,must,yes,no,third-party model API in the clone
+Generate video from text,generate,must,yes,partial,mock provider only; real model API not chosen yet
 Generate video from image,generate,must,yes,no,
-Generate image from text,generate,must,yes,no,
-Model selector with credit cost per generation,generate,must,yes,no,
-Ratio and duration options per model,generate,must,yes,no,request schema differs per model
-Async task queue with status (pending running succeeded failed),generate,must,yes,no,poll or push
+Generate image from text,generate,must,yes,partial,mock provider only
+Model selector with credit cost per generation,generate,must,yes,yes,shows cost per model and total before creating
+Ratio and duration options per model,generate,must,yes,yes,validated per model in lib/models.ts
+Async task queue with status (pending running succeeded failed),generate,must,yes,partial,"in memory, polled every second; no durable queue yet"
 Content moderation on prompts and outputs,safety,must,yes,no,failed moderated tasks still cost credits in the original
 Asset library with projects,projects,must,yes,no,
-Asset page with preview and download,projects,must,yes,no,
-Credits and plans (free standard pro max),billing,must,yes,no,
+Asset page with preview and download,projects,must,yes,partial,"preview, stop, download; no comments yet"
+Credits and plans (free standard pro max),billing,must,yes,partial,append-only ledger with reserve and refund and tests; no plans or Stripe yet
 Credit top-up purchase,billing,must,yes,no,min 1000 credits in the original
 Plan upgrade with proration,billing,must,yes,no,
 Temporary output URLs with download,assets,should,yes,no,
