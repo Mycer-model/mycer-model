@@ -1,0 +1,167 @@
+{
+  "_about": "Dark values for the same roles as tokens.json. Layout, type, space, radius and motion are shared (read from tokens.json).",
+  "color": {
+    "bg": "#141311",
+    "canvas": "#0e0d0c",
+    "surface": "#1b1a17",
+    "surface-raised": "#232220",
+    "border": "#34322d",
+    "border-input": "#8a857b",
+    "text": "#f0eee9",
+    "text-muted": "#b0aba1",
+    "accent": "#5fc8b0",
+    "on-accent": "#06251e",
+    "accent-hover": "#7bd5c1",
+    "accent-active": "#98e0d0",
+    "focus-ring": "#7bd5c1",
+    "accent-soft": "#17332d",
+    "on-accent-soft": "#a9e8da",
+    "danger": "#ff8f8f",
+    "danger-hover": "#ffa9a9",
+    "success": "#5cc890",
+    "warning": "#e6b04d",
+    "info": "#7db7f0",
+    "disabled-bg": "#232220",
+    "disabled-text": "#9a958b",
+    "overlay": "rgba(0,0,0,.64)",
+    "ghost-text": "#8f8a80",
+    "citation-bg": "#17332d",
+    "citation-text": "#a9e8da",
+    "diff-add-bg": "#143321",
+    "diff-add-text": "#a7f0c3",
+    "diff-remove-bg": "#3b1a1a",
+    "diff-remove-text": "#ffc2c2",
+    "highlight-1": "#5c5214",
+    "highlight-2": "#1f4a3a",
+    "highlight-3": "#2b3a66",
+    "on-highlight": "#f5f3ee",
+    "comment-bg": "#3d3410",
+    "on-comment": "#f7e9a8"
+  },
+  "pairs": [
+    [
+      "text",
+      "bg"
+    ],
+    [
+      "text",
+      "surface"
+    ],
+    [
+      "text",
+      "canvas"
+    ],
+    [
+      "text-muted",
+      "bg"
+    ],
+    [
+      "text-muted",
+      "surface"
+    ],
+    [
+      "text-muted",
+      "canvas"
+    ],
+    [
+      "on-accent",
+      "accent"
+    ],
+    [
+      "on-accent",
+      "accent-hover"
+    ],
+    [
+      "on-accent",
+      "accent-active"
+    ],
+    [
+      "accent",
+      "bg"
+    ],
+    [
+      "accent",
+      "surface"
+    ],
+    [
+      "danger",
+      "bg"
+    ],
+    [
+      "danger",
+      "surface"
+    ],
+    [
+      "success",
+      "bg"
+    ],
+    [
+      "warning",
+      "bg"
+    ],
+    [
+      "info",
+      "bg"
+    ],
+    [
+      "on-accent-soft",
+      "accent-soft"
+    ],
+    [
+      "citation-text",
+      "citation-bg"
+    ],
+    [
+      "ghost-text",
+      "bg"
+    ],
+    [
+      "diff-add-text",
+      "diff-add-bg"
+    ],
+    [
+      "diff-remove-text",
+      "diff-remove-bg"
+    ],
+    [
+      "on-highlight",
+      "highlight-1"
+    ],
+    [
+      "on-highlight",
+      "highlight-2"
+    ],
+    [
+      "on-highlight",
+      "highlight-3"
+    ],
+    [
+      "on-comment",
+      "comment-bg"
+    ],
+    [
+      "disabled-text",
+      "disabled-bg"
+    ],
+    [
+      "border-input",
+      "bg",
+      "ui"
+    ],
+    [
+      "accent",
+      "bg",
+      "ui"
+    ],
+    [
+      "focus-ring",
+      "bg",
+      "ui"
+    ],
+    [
+      "focus-ring",
+      "surface",
+      "ui"
+    ]
+  ]
+}

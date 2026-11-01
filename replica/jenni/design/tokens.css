@@ -1,0 +1,126 @@
+:root {
+  --color-bg: #ffffff;
+  --color-canvas: #f4f3f0;
+  --color-surface: #f7f6f3;
+  --color-surface-raised: #ffffff;
+  --color-border: #e4e1db;
+  --color-border-input: #7a756c;
+  --color-text: #1d1c1a;
+  --color-text-muted: #5e5a53;
+  --color-accent: #0f6e5c;
+  --color-on-accent: #ffffff;
+  --color-accent-hover: #0b5a4a;
+  --color-accent-active: #084839;
+  --color-focus-ring: #0f6e5c;
+  --color-accent-soft: #e3f1ed;
+  --color-on-accent-soft: #0a4a3d;
+  --color-danger: #b42323;
+  --color-danger-hover: #8f1c1c;
+  --color-success: #1f7a4d;
+  --color-warning: #8a5a00;
+  --color-info: #1b5fa3;
+  --color-disabled-bg: #ebe9e4;
+  --color-disabled-text: #625e57;
+  --color-overlay: rgba(20,19,17,.5);
+  --color-ghost-text: #6f6a62;
+  --color-citation-bg: #e3f1ed;
+  --color-citation-text: #0a4a3d;
+  --color-diff-add-bg: #dcf3e4;
+  --color-diff-add-text: #14532d;
+  --color-diff-remove-bg: #fbe1e1;
+  --color-diff-remove-text: #7f1d1d;
+  --color-highlight-1: #fff1a8;
+  --color-highlight-2: #cdeedd;
+  --color-highlight-3: #d9e4ff;
+  --color-on-highlight: #1d1c1a;
+  --color-comment-bg: #fff6d6;
+  --color-on-comment: #4a3b00;
+  --font-sans: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --shadow-card: 0 1px 2px rgba(29,28,26,.06), 0 1px 3px rgba(29,28,26,.10);
+  --shadow-pop: 0 12px 32px rgba(29,28,26,.16);
+  --motion-fast: 120ms; --motion-base: 200ms; --ease: cubic-bezier(.2,.8,.2,1);
+  --sidebar: 240px; --header: 56px; --right-panel: 380px; --page-width: 760px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #141311;
+    --color-canvas: #0e0d0c;
+    --color-surface: #1b1a17;
+    --color-surface-raised: #232220;
+    --color-border: #34322d;
+    --color-border-input: #8a857b;
+    --color-text: #f0eee9;
+    --color-text-muted: #b0aba1;
+    --color-accent: #5fc8b0;
+    --color-on-accent: #06251e;
+    --color-accent-hover: #7bd5c1;
+    --color-accent-active: #98e0d0;
+    --color-focus-ring: #7bd5c1;
+    --color-accent-soft: #17332d;
+    --color-on-accent-soft: #a9e8da;
+    --color-danger: #ff8f8f;
+    --color-danger-hover: #ffa9a9;
+    --color-success: #5cc890;
+    --color-warning: #e6b04d;
+    --color-info: #7db7f0;
+    --color-disabled-bg: #232220;
+    --color-disabled-text: #9a958b;
+    --color-overlay: rgba(0,0,0,.64);
+    --color-ghost-text: #8f8a80;
+    --color-citation-bg: #17332d;
+    --color-citation-text: #a9e8da;
+    --color-diff-add-bg: #143321;
+    --color-diff-add-text: #a7f0c3;
+    --color-diff-remove-bg: #3b1a1a;
+    --color-diff-remove-text: #ffc2c2;
+    --color-highlight-1: #5c5214;
+    --color-highlight-2: #1f4a3a;
+    --color-highlight-3: #2b3a66;
+    --color-on-highlight: #f5f3ee;
+    --color-comment-bg: #3d3410;
+    --color-on-comment: #f7e9a8;
+  }
+}
+:root[data-theme="dark"] {
+  --color-bg: #141311;
+  --color-canvas: #0e0d0c;
+  --color-surface: #1b1a17;
+  --color-surface-raised: #232220;
+  --color-border: #34322d;
+  --color-border-input: #8a857b;
+  --color-text: #f0eee9;
+  --color-text-muted: #b0aba1;
+  --color-accent: #5fc8b0;
+  --color-on-accent: #06251e;
+  --color-accent-hover: #7bd5c1;
+  --color-accent-active: #98e0d0;
+  --color-focus-ring: #7bd5c1;
+  --color-accent-soft: #17332d;
+  --color-on-accent-soft: #a9e8da;
+  --color-danger: #ff8f8f;
+  --color-danger-hover: #ffa9a9;
+  --color-success: #5cc890;
+  --color-warning: #e6b04d;
+  --color-info: #7db7f0;
+  --color-disabled-bg: #232220;
+  --color-disabled-text: #9a958b;
+  --color-overlay: rgba(0,0,0,.64);
+  --color-ghost-text: #8f8a80;
+  --color-citation-bg: #17332d;
+  --color-citation-text: #a9e8da;
+  --color-diff-add-bg: #143321;
+  --color-diff-add-text: #a7f0c3;
+  --color-diff-remove-bg: #3b1a1a;
+  --color-diff-remove-text: #ffc2c2;
+  --color-highlight-1: #5c5214;
+  --color-highlight-2: #1f4a3a;
+  --color-highlight-3: #2b3a66;
+  --color-on-highlight: #f5f3ee;
+  --color-comment-bg: #3d3410;
+  --color-on-comment: #f7e9a8;
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --motion-fast: 0ms; --motion-base: 0ms; }
+}
