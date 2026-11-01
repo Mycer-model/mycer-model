@@ -1,0 +1,193 @@
+{
+  "_about": "Dark theme values for the same roles as tokens.json. Check with contrast.py.",
+  "color": {
+    "bg": "#0d0f12",
+    "surface": "#16191e",
+    "surface-raised": "#1d2127",
+    "border": "#2b3139",
+    "border-input": "#7d8794",
+    "text": "#eef0f3",
+    "text-muted": "#a4acb7",
+    "accent": "#7f9cff",
+    "on-accent": "#0d1530",
+    "danger": "#ff8a8a",
+    "success": "#57c58d",
+    "warning": "#e6b04d",
+    "media-bg": "#000000",
+    "on-media": "#f2f4f7",
+    "accent-hover": "#9bb2ff",
+    "accent-active": "#b4c5ff",
+    "focus-ring": "#9bb2ff",
+    "disabled-bg": "#1d2127",
+    "disabled-text": "#8b94a0",
+    "danger-hover": "#ffa3a3",
+    "overlay": "rgba(0,0,0,.64)",
+    "info": "#7db7f0"
+  },
+  "pairs": [
+    [
+      "text",
+      "bg"
+    ],
+    [
+      "text",
+      "surface"
+    ],
+    [
+      "text-muted",
+      "bg"
+    ],
+    [
+      "text-muted",
+      "surface"
+    ],
+    [
+      "on-accent",
+      "accent"
+    ],
+    [
+      "accent",
+      "bg"
+    ],
+    [
+      "accent",
+      "surface"
+    ],
+    [
+      "danger",
+      "bg"
+    ],
+    [
+      "danger",
+      "surface"
+    ],
+    [
+      "success",
+      "bg"
+    ],
+    [
+      "warning",
+      "bg"
+    ],
+    [
+      "on-media",
+      "media-bg"
+    ],
+    [
+      "border-input",
+      "bg",
+      "ui"
+    ],
+    [
+      "accent",
+      "bg",
+      "ui"
+    ],
+    [
+      "on-accent",
+      "accent-hover"
+    ],
+    [
+      "on-accent",
+      "accent-active"
+    ],
+    [
+      "disabled-text",
+      "disabled-bg"
+    ],
+    [
+      "info",
+      "bg"
+    ],
+    [
+      "focus-ring",
+      "bg",
+      "ui"
+    ]
+  ],
+  "font": {
+    "sans": "Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
+    "mono": "ui-monospace, SFMono-Regular, Menlo, monospace"
+  },
+  "type": {
+    "xs": {
+      "size": 12,
+      "line": 16,
+      "weight": 500
+    },
+    "sm": {
+      "size": 14,
+      "line": 20,
+      "weight": 400
+    },
+    "base": {
+      "size": 16,
+      "line": 24,
+      "weight": 400
+    },
+    "lg": {
+      "size": 20,
+      "line": 28,
+      "weight": 600
+    },
+    "xl": {
+      "size": 28,
+      "line": 34,
+      "weight": 700
+    },
+    "display": {
+      "size": 40,
+      "line": 44,
+      "weight": 700
+    }
+  },
+  "space": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "radius": {
+    "sm": 6,
+    "md": 10,
+    "lg": 16,
+    "pill": 999
+  },
+  "shadow": {
+    "card": "0 1px 2px rgba(16,24,40,.06), 0 1px 3px rgba(16,24,40,.10)",
+    "pop": "0 12px 32px rgba(16,24,40,.16)"
+  },
+  "motion": {
+    "fast": "120ms",
+    "base": "200ms",
+    "ease": "cubic-bezier(.2,.8,.2,1)"
+  },
+  "layout": {
+    "sidebar": 240,
+    "header": 56,
+    "content-max": 1280,
+    "breakpoints": {
+      "sm": 640,
+      "md": 768,
+      "lg": 1024,
+      "xl": 1280
+    }
+  },
+  "z": {
+    "sticky": 10,
+    "dropdown": 20,
+    "overlay": 30,
+    "modal": 40,
+    "toast": 50
+  },
+  "opacity": {
+    "disabled": 1,
+    "hover-overlay": 0.06
+  },
+  "_dark_theme": "tokens.dark.json holds the dark values for the same role names"
+}
