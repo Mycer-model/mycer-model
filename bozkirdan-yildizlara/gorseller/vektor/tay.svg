@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 600" width="720" height="600">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd9a0"/><stop offset=".55" stop-color="#ffe9c7"/><stop offset="1" stop-color="#fff4de"/></linearGradient>
+  <radialGradient id="sun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff6c9"/><stop offset="1" stop-color="#ffc766"/></radialGradient>
+  <linearGradient id="hill1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b9c97a"/><stop offset="1" stop-color="#8fa856"/></linearGradient>
+  <linearGradient id="hill2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fb36a"/><stop offset="1" stop-color="#6f9250"/></linearGradient>
+  <linearGradient id="kaftan" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2a8493"/><stop offset=".5" stop-color="#3aa7b6"/><stop offset="1" stop-color="#247786"/></linearGradient>
+  <linearGradient id="robe" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f1dfb8"/><stop offset=".5" stop-color="#fff6e0"/><stop offset="1" stop-color="#eed9ac"/></linearGradient>
+  <radialGradient id="skin" cx=".45" cy=".4" r=".7"><stop offset="0" stop-color="#fad7b2"/><stop offset="1" stop-color="#e8aa80"/></radialGradient>
+  <linearGradient id="beard" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#dfe6ea"/></linearGradient>
+  <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c9803f"/><stop offset="1" stop-color="#8a4d22"/></linearGradient>
+  <linearGradient id="hat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffaf0"/><stop offset="1" stop-color="#efdcb6"/></linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd86a"/><stop offset="1" stop-color="#e09a22"/></linearGradient>
+  <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6b3d22"/><stop offset="1" stop-color="#3d2012"/></linearGradient>
+  <linearGradient id="hairk" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a2a22"/><stop offset="1" stop-color="#17100c"/></linearGradient>
+  <linearGradient id="dress" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ef8a3c"/><stop offset=".5" stop-color="#ffab5a"/><stop offset="1" stop-color="#e07a2c"/></linearGradient>
+  <linearGradient id="vestg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5a9e4e"/><stop offset=".5" stop-color="#78bb62"/><stop offset="1" stop-color="#4a8c40"/></linearGradient>
+  <linearGradient id="vestt" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2a8493"/><stop offset=".5" stop-color="#3aa7b6"/><stop offset="1" stop-color="#247786"/></linearGradient>
+  <linearGradient id="coat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d28a4c"/><stop offset="1" stop-color="#b9713a"/></linearGradient>
+  <linearGradient id="coatd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b87a40"/><stop offset="1" stop-color="#9a5f2e"/></linearGradient>
+  <linearGradient id="pants" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a5a3a"/><stop offset="1" stop-color="#6e4428"/></linearGradient>
+  <pattern id="motif" width="28" height="28" patternUnits="userSpaceOnUse">
+    <rect width="28" height="28" fill="#c8402f"/>
+    <path d="M14 3 L25 14 L14 25 L3 14 Z" fill="#ffd86a"/>
+    <path d="M14 9 L19 14 L14 19 L9 14 Z" fill="#c8402f"/>
+  </pattern>
+  <pattern id="motif2" width="20" height="20" patternUnits="userSpaceOnUse">
+    <rect width="20" height="20" fill="#2a8493"/>
+    <path d="M10 2 L18 10 L10 18 L2 10 Z" fill="#ffd86a"/>
+    <circle cx="10" cy="10" r="3" fill="#c8402f"/>
+  </pattern>
+  <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r="2.2" fill="#ffffff" opacity=".14"/></pattern>
+  <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#5a3a18" flood-opacity=".28"/></filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+
+<ellipse cx="360" cy="560" rx="260" ry="20" fill="#4a5a2a" opacity=".3" filter="url(#soft)"/>
+<!-- kuyruk -->
+<path d="M190 270 Q86 270 80 410 Q112 390 128 336 Q138 410 112 454 Q190 408 208 300Z" fill="url(#hair)" filter="url(#sh)"/>
+<path d="M120 380 Q116 420 110 440 M146 340 Q150 380 140 410" stroke="#2c170c" stroke-width="3" fill="none" opacity=".5"/>
+<!-- uzak bacaklar -->
+<g filter="url(#sh)">
+  <path d="M206 380 L246 380 L240 520 L214 520Z" fill="url(#coatd)"/>
+  <ellipse cx="227" cy="526" rx="24" ry="12" fill="#3b2416"/>
+  <path d="M446 380 L486 380 L478 520 L452 520Z" fill="url(#coatd)"/>
+  <ellipse cx="465" cy="526" rx="24" ry="12" fill="#3b2416"/>
+</g>
+<!-- gövde -->
+<g filter="url(#sh)">
+  <ellipse cx="340" cy="330" rx="180" ry="104" fill="url(#coat)"/>
+  <path d="M190 360 Q200 430 250 440 Q220 400 232 360Z" fill="#c4813f" opacity=".5"/>
+</g>
+<!-- yakın bacaklar -->
+<g filter="url(#sh)">
+  <path d="M250 392 L292 392 L284 524 L254 524Z" fill="url(#coat)"/>
+  <path d="M250 392 L292 392 L290 420 L252 420Z" fill="#c4813f" opacity=".5"/>
+  <ellipse cx="270" cy="530" rx="26" ry="13" fill="#3b2416"/>
+  <path d="M402 392 L444 392 L438 524 L410 524Z" fill="url(#coat)"/>
+  <ellipse cx="424" cy="530" rx="26" ry="13" fill="#3b2416"/>
+  <path d="M258 500 h22 M413 500 h22" stroke="#f3e2c0" stroke-width="7" stroke-linecap="round"/>
+</g>
+<!-- boyun -->
+<g filter="url(#sh)">
+  <path d="M440 300 Q470 220 500 150 L600 214 Q560 262 520 346 Q480 340 440 300Z" fill="url(#coat)"/>
+</g>
+<!-- yele -->
+<g filter="url(#sh)" fill="url(#hair)">
+  <path d="M492 130 Q452 150 462 196 Q430 190 440 240 Q408 244 430 290 Q470 270 470 232 Q504 220 494 180Q520 166 514 132Z"/>
+  <path d="M470 250 Q440 280 424 320 Q470 320 486 270Z"/>
+</g>
+<!-- örtü -->
+<g filter="url(#sh)">
+  <path d="M232 236 Q336 206 440 246 L450 330 Q336 366 222 330Z" fill="#fff6e0"/>
+  <path d="M232 236 Q336 206 440 246 L444 272 Q336 236 228 264Z" fill="url(#motif)"/>
+  <path d="M222 330 Q336 366 450 330 L452 306 Q336 342 220 306Z" fill="#c8402f"/>
+  <path d="M232 236 Q336 206 440 246" stroke="url(#gold)" stroke-width="4" fill="none"/>
+  <g fill="#c8402f"><circle cx="262" cy="338" r="7"/><circle cx="336" cy="352" r="7"/><circle cx="410" cy="340" r="7"/></g>
+</g>
+<!-- kafa -->
+<g filter="url(#sh)">
+  <path d="M520 118 L496 60 L560 98Z" fill="#b9713a"/>
+  <path d="M524 112 L508 78 L548 104Z" fill="#f4b7a0"/>
+  <ellipse cx="566" cy="196" rx="88" ry="70" transform="rotate(22 566 196)" fill="url(#coat)"/>
+  <ellipse cx="632" cy="236" rx="52" ry="42" transform="rotate(22 632 236)" fill="#f3d3a8"/>
+</g>
+<path d="M556 130 Q590 170 626 210 Q634 222 622 224 Q582 196 546 150Z" fill="#fff" opacity=".95"/>
+<ellipse cx="650" cy="246" rx="6" ry="9" fill="#7a4a2a"/>
+<path d="M620 262 Q636 276 654 266" stroke="#7a3a2a" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+<ellipse cx="588" cy="196" rx="18" ry="22" fill="#fff"/>
+<ellipse cx="591" cy="200" rx="14" ry="18" fill="#4a2c1a"/>
+<circle cx="591" cy="203" r="9" fill="#1b0f08"/>
+<circle cx="597" cy="193" r="6" fill="#fff"/><circle cx="586" cy="209" r="2.6" fill="#fff"/>
+<path d="M568 190 Q590 166 612 190" stroke="#3a2418" stroke-width="4" fill="none" stroke-linecap="round"/>
+<circle cx="574" cy="240" r="16" fill="#f08a78" opacity=".5"/>
+<path d="M530 134 Q512 120 540 112 Q560 120 556 138Z" fill="url(#hair)"/>
+<path d="M518 124 Q500 110 520 96" stroke="#3d2012" stroke-width="5" fill="none" stroke-linecap="round"/>
+<circle cx="440" cy="300" r="9" fill="url(#gold)"/>
+</svg>
