@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800">
+  <defs>
+    <style>
+      .cut { filter: drop-shadow(0 4px 0 rgba(60,40,20,.18)); }
+    </style>
+  </defs>
+  <rect width="600" height="800" fill="#f6e7c8"/>
+  <circle cx="300" cy="400" r="270" fill="#fbf3df"/>
+  <ellipse cx="300" cy="745" rx="150" ry="18" fill="#c9b184" opacity=".55"/>
+
+  <g class="cut">
+    <!-- legs / boots -->
+    <rect x="240" y="660" width="42" height="70" rx="12" fill="#6b3f2a"/>
+    <rect x="318" y="660" width="42" height="70" rx="12" fill="#6b3f2a"/>
+    <ellipse cx="256" cy="732" rx="34" ry="15" fill="#4a2a1b"/>
+    <ellipse cx="344" cy="732" rx="34" ry="15" fill="#4a2a1b"/>
+
+    <!-- kaftan outer -->
+    <path d="M205 330 Q300 300 395 330 L430 690 Q300 725 170 690 Z" fill="#2f8f9d"/>
+    <!-- inner robe -->
+    <path d="M258 335 L342 335 L360 700 Q300 712 240 700 Z" fill="#fff4dc"/>
+    <path d="M300 335 L300 705" stroke="#e6cfa0" stroke-width="4"/>
+    <!-- hem trim -->
+    <path d="M172 676 Q300 712 428 676 L430 692 Q300 728 170 692 Z" fill="#e8a33d"/>
+    <!-- belt -->
+    <rect x="232" y="500" width="136" height="30" rx="6" fill="#c8402f"/>
+    <circle cx="300" cy="515" r="13" fill="#f0b43c"/>
+    <circle cx="300" cy="515" r="6" fill="#c8402f"/>
+
+    <!-- arms -->
+    <path d="M205 335 Q150 420 190 520 L240 500 Q215 430 250 370 Z" fill="#26808d"/>
+    <path d="M395 335 Q450 420 410 520 L360 500 Q385 430 350 370 Z" fill="#26808d"/>
+  </g>
+
+  <!-- kopuz -->
+  <g class="cut" transform="rotate(-16 215 575)">
+    <rect x="205" y="300" width="22" height="270" rx="9" fill="#7a4624"/>
+    <circle cx="216" cy="292" r="15" fill="#5e3318"/>
+    <ellipse cx="216" cy="585" rx="62" ry="80" fill="#a8622f"/>
+    <ellipse cx="216" cy="585" rx="20" ry="26" fill="#5e3318"/>
+    <path d="M212 300 L212 600 M221 300 L221 600" stroke="#f4e7c0" stroke-width="2.5"/>
+    <rect x="196" y="600" width="40" height="8" rx="3" fill="#5e3318"/>
+  </g>
+  <!-- hands -->
+  <circle cx="215" cy="515" r="22" fill="#f1c6a0"/>
+  <circle cx="395" cy="515" r="22" fill="#f1c6a0"/>
+
+  <g class="cut">
+    <!-- head -->
+    <circle cx="300" cy="245" r="95" fill="#f1c6a0"/>
+    <circle cx="214" cy="255" r="18" fill="#e9b88f"/>
+    <circle cx="386" cy="255" r="18" fill="#e9b88f"/>
+    <!-- beard -->
+    <path d="M205 270 Q215 420 300 450 Q385 420 395 270 Q380 335 300 340 Q220 335 205 270 Z" fill="#fdfdfb"/>
+    <path d="M215 285 Q230 400 300 435" fill="none" stroke="#e4e4de" stroke-width="3"/>
+    <path d="M385 285 Q370 400 300 435" fill="none" stroke="#e4e4de" stroke-width="3"/>
+    <!-- mustache -->
+    <path d="M300 288 Q262 262 232 292 Q262 308 300 296 Q338 308 368 292 Q338 262 300 288 Z" fill="#fdfdfb" stroke="#e4e4de" stroke-width="2"/>
+    <!-- smile -->
+    <path d="M276 312 Q300 330 324 312" fill="none" stroke="#a24a3a" stroke-width="5" stroke-linecap="round"/>
+    <!-- nose -->
+    <ellipse cx="300" cy="268" rx="16" ry="13" fill="#e8aa82"/>
+    <!-- eyes -->
+    <path d="M247 226 Q265 208 283 226" fill="none" stroke="#3a2a22" stroke-width="6" stroke-linecap="round"/>
+    <path d="M317 226 Q335 208 353 226" fill="none" stroke="#3a2a22" stroke-width="6" stroke-linecap="round"/>
+    <!-- brows -->
+    <path d="M243 205 Q265 190 285 202" fill="none" stroke="#fdfdfb" stroke-width="9" stroke-linecap="round"/>
+    <path d="M315 202 Q335 190 357 205" fill="none" stroke="#fdfdfb" stroke-width="9" stroke-linecap="round"/>
+    <!-- cheeks -->
+    <circle cx="245" cy="262" r="14" fill="#e98c7a" opacity=".55"/>
+    <circle cx="355" cy="262" r="14" fill="#e98c7a" opacity=".55"/>
+    <!-- börk hat -->
+    <path d="M210 175 Q215 90 300 85 Q385 90 390 175 Q300 150 210 175 Z" fill="#fff4dc"/>
+    <path d="M208 170 Q300 140 392 170 L392 192 Q300 165 208 192 Z" fill="#c8402f"/>
+    <circle cx="300" cy="82" r="14" fill="#f0b43c"/>
+  </g>
+</svg>
